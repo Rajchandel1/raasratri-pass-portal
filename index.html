@@ -537,21 +537,21 @@
     <div class="container">
 
         <div class="neumorphic-box">
-            <h1 style="color: #1e293b; margin-bottom: 15px; ">🎪 Welcome to Navratri 2025!</h1>
+            <h1 style="color: #1e293b; margin-bottom: 15px; ">✨ Welcome to Raas Ratri 2025!</h1>
             <p style="color: #64748b; line-height: 1.6; margin-bottom: 0;">
-                Find your entry pass by searching with your name or ID. Each pass contains a unique QR code for seamless entry validation.
+                Find your entry pass by searching with your name. Each pass contains a unique QR code for seamless entry validation. <br>
             </p>
         </div>
 
         <div class="search-card">
          
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Enter your name or ID...">
+                <input type="text" id="searchInput" placeholder="Enter your name...">
             </div>
 
             <div id="loadingDiv" class="loading">
                 <div class="spinner"></div>
-                <p>Loading data...</p>
+                <p>Getting Your Exclusive Passes Please Wait...</p>
             </div>
 
             <div id="resultsDiv" class="results"></div>
@@ -658,7 +658,6 @@
             passCard.innerHTML = `
                 <h2>${student.Name}</h2>
                 <p class="pass-id">ID: ${student.ID}</p>
-                <p class="pass-year">Year: ${student.Year}</p>
                 <div class="pass-hash">${student.Hash_Code}</div>
                 <div id="qrCodeContainer"></div>
                 <p class="pass-footer">Navratri 2025 Entry Pass</p>
